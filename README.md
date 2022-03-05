@@ -1,25 +1,33 @@
 # Hardhat Chainlink Keepers Demo Project 
 
-Demonstration of Chainlink Keepers on Kovan testnet. Added ability for owner to toggle counter on/off.
+Demonstration of Chainlink Keepers on Kovan testnet. Owner has ability to toggle counter on/off.
 
-## Deploy new contract:
-```shell
-npx hardhat run scripts/deploy.js --network kovan   
-```
-## Event listener script:
-```shell
-npx hardhat run scripts/listener.js --network kovan   
-```
-## Verify contract:
-```shell
-npx hardhat verify --network kovan <contract_address> <constructor args> 
-```
 ## .env:
 ```shell
 KOVAN_URL=
 KOVAN_KEY=
 ETHERSCAN_KEY=
 CONTRACT_ADDRESS=
+```
+## Deploy new contract:
+```shell
+npx hardhat run scripts/deploy.js --network kovan
+```
+## Kovan ETH/LINK faucet:
+```shell
+https://faucets.chain.link/kovan
+```
+## Register Upkeep:
+```shell
+https://docs.chain.link/docs/chainlink-keepers/register-upkeep/#how-funding-works
+```
+## Verify contract:
+```shell
+npx hardhat verify --network kovan <contract_address> <constructor args> 
+```
+## Event listener script:
+```shell
+npx hardhat run scripts/listener.js --network kovan   
 ```
 
 ## Events emitted on automated counter increments
