@@ -1,6 +1,8 @@
 # Hardhat Chainlink Keepers Demo Project 
 
-## Deploy contract:
+Demonstration of Chainlink Keepers on Kovan testnet. Added ability for owner to toggle counter on/off.
+
+## Deploy new contract:
 ```shell
 npx hardhat run scripts/deploy.js --network kovan   
 ```
