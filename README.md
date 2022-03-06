@@ -4,10 +4,10 @@ Demonstration of Chainlink Keepers on Kovan testnet. Owner has ability to toggle
 
 ## .env:
 ```shell
-KOVAN_URL=
-KOVAN_KEY=
-ETHERSCAN_KEY=
-CONTRACT_ADDRESS=
+KOVAN_URL= <node provider API key>
+KOVAN_KEY= <private key>
+ETHERSCAN_KEY= <Etherscan API key>
+CONTRACT_ADDRESS= <deployed address>
 ```
 ## Deploy new contract:
 ```shell
