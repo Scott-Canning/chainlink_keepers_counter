@@ -7,6 +7,7 @@ Demonstration of Chainlink Keepers on Kovan testnet. Owner has ability to toggle
 KOVAN_URL= <node provider API key>
 KOVAN_KEY= <private key>
 ETHERSCAN_KEY= <Etherscan API key>
+POLYGONSCAN_KEY <Polygonscan API key>
 CONTRACT_ADDRESS= <deployed address>
 ```
 ## Deploy new contract:
