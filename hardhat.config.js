@@ -3,22 +3,25 @@ require("@nomiclabs/hardhat-etherscan");
 require('dotenv').config({path:__dirname+'/.env'})
 
 module.exports = {
-  solidity: "0.7.0",
+  solidity: "0.8.7",
   paths: {
     artifacts: "./app/artifacts",
   },
-  defaultNetwork: "kovan", 
+  defaultNetwork: "matic", 
   networks: {
     hardhat: {
     },
     kovan: {
       url: process.env.KOVAN_URL,
-      accounts: [process.env.KOVAN_KEY],
+      accounts: [process.env.PRIVATE_KEY],
     },
+    matic: {
+      url: process.env.MUMBAI_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    }
   },
   etherscan: {
-    apiKey: {
-      kovan: process.env.ETHERSCAN_KEY
-    }
+    // apiKey: process.env.ETHERSCAN_KEY
+    apiKey: process.env.POLYGONSCAN_KEY
   },
 };
